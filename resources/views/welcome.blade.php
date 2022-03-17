@@ -61,8 +61,8 @@
         <ul>
           <li><a class="nav-link scrollto" href="">TRYOUT</a></li>
           <li><a class="nav-link scrollto" href="">Lihat Materi</a></li>
-          <li><a class="nav-link scrollto" href="">Tentang</a></li>
-          <li><a class="nav-link scrollto" href="">Kontak</a></li>
+          <li><a class="nav-link scrollto" href="#tentang">Tentang</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li class="dropdown megamenu"><a href="{{ route('login') }}"><span>Login Admin</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li>
@@ -79,7 +79,145 @@
     </div>
   </header><!-- End Header -->
 
+  <section id="hero-animated" class="hero-animated d-flex align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+      <img src={{asset("user/assets/img/hero-carousel/hero-carousel-3.svg")}} class="img-fluid animated">
+      <h2>Selamat Datang di <span>TRYOUT.</span></h2>
+      <p>.</p>
+      <div class="d-flex">
+        <a href="#tryout" class="btn-get-started scrollto">Mulai TRYOUT</a>
+        <a href="#materi" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Tonton Video</span></a>
+      </div>
+    </div>
+  </section>
+
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- ======= About Section ======= -->
+  <section id="tentang" class="tentang">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Tentang</h2>
+        <p>Website ini dibuat untuk memudahkan para siswa termasuk dijenjang SMA sederajat dalam persiapan menghadapi TRYOUT.</p>
+      </div>
+
+      <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-5">
+          <div class="about-img">
+            <img src={{asset("user/assets/img/about.jpg")}} class="img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <h3 class="pt-0 pt-lg-5">Kelebihan Website ini:</h3>
+
+          <!-- Tab Content -->
+          <div class="tab-content">
+
+            <div class="tab-pane fade show active" id="tab1">
+
+              <div class="d-flex align-items-center mt-4">
+                <i class="bi bi-check2"></i>
+                <h4>Bisa diakses oleh semua orang</h4>
+              </div>
+              <p>Selain untuk melatih kemampuan akademik siswa website ini bisa diakses oleh siapa saja.</p>
+
+              <div class="d-flex align-items-center mt-4">
+                <i class="bi bi-check2"></i>
+                <h4>Tidak perlu daftar akun</h4>
+              </div>
+              <p>Website ini dibuat sedemikian rupa supaya pengguna tidak perlu melalui daftar akun yang ribet.</p>
+
+              <div class="d-flex align-items-center mt-4">
+                <i class="bi bi-check2"></i>
+                <h4>Dapat pembelajaran gratis</h4>
+              </div>
+              <p>Selain melatih nilai akademik, website ini juga menyediakan sebuah materi pembelajaran dalam bentuk video yang bisa dilihat oleh para pengguna.</p>
+
+              <div class="d-flex align-items-center mt-4">
+                <i class="bi bi-check2"></i>
+                <h4>Bisa mengikuti ujian lebih dari satu kali</h4>
+              </div>
+              <p>Tidak seperti website lainnya yang hanya bisa diakses satu kali, website ini bisa diakses beberapa kalipun.</p>
+
+              <div class="d-flex align-items-center mt-4">
+                <i class="bi bi-check2"></i>
+                <h4>Gratis tanpa dipungut biaya</h4>
+              </div>
+              <p>Pokoknya mah gratis we.</p>
+
+            </div><!-- End Tab 1 Content -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+  <!-- ======= Team Section ======= -->
+  <section id="team" class="team">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Team</h2>
+      </div>
+
+      <div class="row gy-5">
+
+        <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
+          <div class="team-member">
+            <div class="member-img">
+              <img src={{asset("user/assets/img/team/team-1.jpg")}} class="img-fluid" alt="">
+            </div>
+            <div class="member-info">
+              <div class="social">
+                <a href="https://www.instagram.com/dinaamel_04/"><i class="bi bi-instagram"></i></a>
+              </div>
+              <h4>Dina Amelia</h4>
+              <span>Front-end Developer</span>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+          <div class="team-member">
+            <div class="member-img">
+              <img src={{asset("user/assets/img/team/team-2.jpg")}} class="img-fluid" alt="">
+            </div>
+            <div class="member-info">
+              <div class="social">
+                <a href="https://www.instagram.com/_ksyzaa15/"><i class="bi bi-instagram"></i></a>
+              </div>
+              <h4>Kesyza Andriana Hartuti</h4>
+              <span>Back-end Developer</span>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
+          <div class="team-member">
+            <div class="member-img">
+              <img src={{asset("user/assets/img/team/team-3.jpg")}} class="img-fluid" alt="">
+            </div>
+            <div class="member-info">
+              <div class="social">
+                <a href="https://www.instagram.com/__fanira/"><i class="bi bi-instagram"></i></a>
+              </div>
+              <h4>Fani Ramadhanty</h4>
+              <span>Front-end Developer</span>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+      </div>
+
+    </div>
+  </section><!-- End Team Section -->
 
   <div id="preloader"></div>
 
