@@ -59,8 +59,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="">TRYOUT</a></li>
-          <li><a class="nav-link scrollto" href="">Lihat Materi</a></li>
+          <li><a class="nav-link scrollto" href="#materi">Lihat Materi</a></li>
           <li><a class="nav-link scrollto" href="#tentang">Tentang</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li class="dropdown megamenu"><a href="{{ route('login') }}"><span>Login Admin</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -92,6 +91,89 @@
   </section>
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- ======= Services Section ======= -->
+  <section id="materi" class="materi">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Materi Pembelajaran</h2>
+      </div>
+
+      <div class="row gy-5">
+
+        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="service-item">
+            <div class="img">
+              <img src={{asset("user/assets/img/bhs-indonesia.jpg")}} class="img-fluid" alt="">
+            </div>
+            <div class="details position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="https://www.youtube.com/watch?v=yXlCMWY-OC8&t=1s" class="stretched-link">
+                <h3>Bahasa Indonesia</h3>
+              </a>
+              <p>Materi pembelajaran.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="service-item">
+            <div class="img">
+              <img src={{asset("user/assets/img/english.jpg")}} class="img-fluid" alt="">
+            </div>
+            <div class="details position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="https://www.youtube.com/watch?v=0Y9MPiieXPQ" class="stretched-link">
+                <h3>Bahasa Inggris</h3>
+              </a>
+              <p>Materi pembelajaran.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="service-item">
+            <div class="img">
+              <img src={{asset("user/assets/img/mat.jpg")}} class="img-fluid" alt="">
+            </div>
+            <div class="details position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="https://www.youtube.com/watch?v=YYxFnK6vnTc" class="stretched-link">
+                <h3>Matematika</h3>
+              </a>
+              <p>Materi pembelajaran.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="service-item">
+            <div class="img">
+              <img src={{asset("user/assets/img/5.png")}} class="img-fluid" alt="">
+            </div>
+            <div class="details position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="https://www.youtube.com/watch?v=04Wxp8bv5NU" class="stretched-link">
+                <h3>Ilmu Pengetahuan Alam</h3>
+              </a>
+              <p>Materi pembelajaran.</p>
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
 
   <!-- ======= About Section ======= -->
   <section id="tentang" class="tentang">
