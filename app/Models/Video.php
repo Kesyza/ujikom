@@ -9,7 +9,8 @@ class Video extends Model
 {
     use HasFactory;
 
-    protected $visible = ['judul', 'ket', 'video'];
-    protected $fillable = ['judul', 'ket', 'video'];
+    protected $visible = ['judul', 'ket', 'materi'];
+    protected $fillable = ['judul', 'ket', 'materi'];
     public $timestamps = true;
+
 }

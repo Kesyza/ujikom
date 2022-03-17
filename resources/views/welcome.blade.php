@@ -81,7 +81,7 @@
 
   <section id="hero-animated" class="hero-animated d-flex align-items-center">
     <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
-      <img src={{asset("user/assets/img/hero-carousel/hero-carousel-3.svg")}} class="img-fluid animated">
+      <img src={{asset("user/assets/img/team/t.png")}} class="img-fluid animated">
       <h2>Selamat Datang di <span>TRYOUT.</span></h2>
       <p>.</p>
       <div class="d-flex">
@@ -104,14 +104,14 @@
 
       <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
 
-        <div class="col-lg-5">
+        <div class="col-lg-6">
           <div class="about-img">
-            <img src={{asset("user/assets/img/about.jpg")}} class="img-fluid" alt="">
+            <img src={{asset("user/assets/img/faq.jpg")}} class="img-fluid" alt="">
           </div>
         </div>
 
-        <div class="col-lg-7">
-          <h3 class="pt-0 pt-lg-5">Kelebihan Website ini:</h3>
+        <div class="col-lg-6">
+          <h3 class="pt-0 pt-lg-4">Kelebihan Website ini:</h3>
 
           <!-- Tab Content -->
           <div class="tab-content">
@@ -135,12 +135,6 @@
                 <h4>Dapat pembelajaran gratis</h4>
               </div>
               <p>Selain melatih nilai akademik, website ini juga menyediakan sebuah materi pembelajaran dalam bentuk video yang bisa dilihat oleh para pengguna.</p>
-
-              <div class="d-flex align-items-center mt-4">
-                <i class="bi bi-check2"></i>
-                <h4>Bisa mengikuti ujian lebih dari satu kali</h4>
-              </div>
-              <p>Tidak seperti website lainnya yang hanya bisa diakses satu kali, website ini bisa diakses beberapa kalipun.</p>
 
               <div class="d-flex align-items-center mt-4">
                 <i class="bi bi-check2"></i>

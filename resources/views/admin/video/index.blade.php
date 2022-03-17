@@ -40,7 +40,7 @@
                                     <td>{{$no++}}</td>
                                     <td>{{$data->judul}}</td>
                                     <td>{{$data->ket}}</td>
-                                    <td>{{$data->video}}</td>
+                                    <td>{{$data->materi}}</td>
                                     <td>
                                         <form action="{{route('video.destroy',$data->id)}}" method="post">
                                             @method('delete')

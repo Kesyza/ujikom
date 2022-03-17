@@ -17,7 +17,7 @@ class CreateVideosTable extends Migration
             $table->id();
             $table->string('judul');
             $table->string('ket');
-            $table->string('video');
+            $table->string('materi');
             $table->timestamps();
         });
     }

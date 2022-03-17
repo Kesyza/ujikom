@@ -36,8 +36,8 @@
                         </div>
                         <div class="form-group">
                             <label for="">Masukan Video</label>
-                            <input type="text" name="video" class="form-control @error('video') is-invalid @enderror">
-                            @error('video')
+                            <input type="text" name="materi" class="form-control @error('materi') is-invalid @enderror">
+                            @error('materi')
                                 <span class="invalid-feedback" role="alert"></span>
                                 <strong>{{ $message }}</strong>
                             @enderror

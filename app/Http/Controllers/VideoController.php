@@ -39,13 +39,13 @@ class VideoController extends Controller
         $validated = $request->validate([
             'judul' => 'required',
             'ket' => 'required',
-            'video' => 'required',
+            'materi' => 'required',
         ]);
 
         $videoo = New Video;
         $videoo->judul = $request->judul;
         $videoo->ket = $request->ket;
-        $videoo->video = $request->video;
+        $videoo->materi = $request->materi;
         $videoo->save();
         return redirect()->route('video.index');
     }

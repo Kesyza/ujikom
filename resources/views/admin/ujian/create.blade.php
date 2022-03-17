@@ -33,7 +33,7 @@
                         </div>
                         <div class="form-group">
                             <label for="">Masukan Durasi</label>
-                            <input type="time" name="waktu" class="form-control @error('waktu') is-invalid @enderror">
+                            <input type="number" name="waktu" class="form-control @error('waktu') is-invalid @enderror">
                             @error('waktu')
                                 <span class="invalid-feedback" role="alert"></span>
                                 <strong>{{ $message }}</strong>

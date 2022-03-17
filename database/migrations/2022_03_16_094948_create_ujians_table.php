@@ -16,7 +16,7 @@ class CreateUjiansTable extends Migration
         Schema::create('ujians', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('soal_id')->unsigned();
-            $table->time('waktu');
+            $table->integer('waktu');
             $table->integer('jumlah_soal');
             $table->string('nilai');
             $table->string('status');
