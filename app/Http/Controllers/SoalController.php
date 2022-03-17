@@ -44,6 +44,7 @@ class SoalController extends Controller
         $validated = $request->validate([
             'nama_mapel_id' => 'required',
             'pilih_paket_id' => 'required',
+            'nama_soal' => 'required',
             'soal' => 'required',
             'opsi_A' => 'required',
             'opsi_B' => 'required',
@@ -56,6 +57,7 @@ class SoalController extends Controller
         $soall = New Soal;
         $soall->nama_mapel_id = $request->nama_mapel_id;
         $soall->pilih_paket_id = $request->pilih_paket_id;
+        $soall->nama_soal = $request->nama_soal;
         $soall->soal = $request->soal;
         $soall->opsi_A = $request->opsi_A;
         $soall->opsi_B = $request->opsi_B;
@@ -75,7 +77,8 @@ class SoalController extends Controller
      */
     public function show($id)
     {
-        //
+        $soall = Soal::findOrFail($id);
+        return view('admin.soal.show', compact('soall'));
     }
 
     /**

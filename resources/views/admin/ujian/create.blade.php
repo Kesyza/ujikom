@@ -19,10 +19,10 @@
                     <form action="{{route('ujian.store')}}" method="post">
                         @csrf
                         <div class="form-group">
-                            <label>Masukan Soal</label>
+                            <label>Masukan Nama Soal</label>
                               <select name="soal_id" class="form-control @error('soal_id') is-invalid @enderror">
                                   @foreach($soall as $data)
-                                      <option value="{{$data->id}}">{{$data->soal}}</option>
+                                      <option value="{{$data->id}}">{{$data->nama_soal}}</option>
                                   @endforeach
                               </select>
                               @error('soal_id')

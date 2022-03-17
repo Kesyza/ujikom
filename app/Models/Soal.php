@@ -9,8 +9,8 @@ class Soal extends Model
 {
     use HasFactory;
 
-    protected $visible = ['nama_mapel_id', 'pilih_paket_id', 'soal', 'opsi_A', 'opsi_B', 'opsi_C', 'opsi_D', 'jawaban', 'keterangan'];
-    protected $fillable = ['nama_mapel_id', 'pilih_paket_id', 'soal', 'opsi_A', 'opsi_B', 'opsi_C', 'opsi_D', 'jawaban', 'keterangan'];
+    protected $visible = ['nama_mapel_id', 'pilih_paket_id', 'nama_soal', 'soal', 'opsi_A', 'opsi_B', 'opsi_C', 'opsi_D', 'jawaban', 'keterangan'];
+    protected $fillable = ['nama_mapel_id', 'pilih_paket_id', 'nama_soal', 'soal', 'opsi_A', 'opsi_B', 'opsi_C', 'opsi_D', 'jawaban', 'keterangan'];
     public $timestamps = true;
 
     public function mapel()

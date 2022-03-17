@@ -45,6 +45,14 @@
                               @enderror
                         </div>
                         <div class="form-group">
+                            <label for="">Masukan Nama Soal</label>
+                            <input type="text" name="nama_soal" class="form-control @error('nama_soal') is-invalid @enderror">
+                            @error('nama_soal')
+                                <span class="invalid-feedback" role="alert"></span>
+                                <strong>{{ $message }}</strong>
+                            @enderror
+                        </div>
+                        <div class="form-group">
                             <label for="">Masukan Soal</label>
                             <textarea type="text" name="soal" class="form-control @error('soal') is-invalid @enderror"></textarea>
                             @error('soal')

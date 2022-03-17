@@ -17,6 +17,7 @@ class CreateSoalsTable extends Migration
             $table->id();
             $table->bigInteger('nama_mapel_id')->unsigned();
             $table->bigInteger('pilih_paket_id')->unsigned();
+            $table->string('nama_soal');
             $table->text('soal');
             $table->string('opsi_A');
             $table->string('opsi_B');

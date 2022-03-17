@@ -25,7 +25,7 @@
                             <thead>
                             <tr>
                                 <th class="text-center">No</th>
-                                <th class="text-center">Soal</th>
+                                <th class="text-center">Nama Soal</th>
                                 <th class="text-center">Durasi</th>
                                 <th class="text-center">Jumlah Soal</th>
                                 <th class="text-center">Nilai</th>
@@ -40,7 +40,7 @@
                                 @foreach ($ujian as $data)
                                 <tr>
                                     <td>{{$no++}}</td>
-                                    <td>{{$data->soall->soal}}</td>
+                                    <td>{{$data->soall->nama_soal}}</td>
                                     <td>{{$data->waktu}}</td>
                                     <td>{{$data->jumlah_soal}}</td>
                                     <td>{{$data->nilai}}</td>
