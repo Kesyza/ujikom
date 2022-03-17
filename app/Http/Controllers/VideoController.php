@@ -14,7 +14,8 @@ class VideoController extends Controller
      */
     public function index()
     {
-        //
+        $videoo = Video::all();
+        return view('admin.video.index', compact('videoo'));
     }
 
     /**
@@ -24,7 +25,7 @@ class VideoController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.video.create');
     }
 
     /**
@@ -35,7 +36,18 @@ class VideoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'judul' => 'required',
+            'ket' => 'required',
+            'video' => 'required',
+        ]);
+
+        $videoo = New Video;
+        $videoo->judul = $request->judul;
+        $videoo->ket = $request->ket;
+        $videoo->video = $request->video;
+        $videoo->save();
+        return redirect()->route('video.index');
     }
 
     /**
@@ -44,7 +56,7 @@ class VideoController extends Controller
      * @param  \App\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function show(Video $video)
+    public function show($id)
     {
         //
     }
@@ -55,7 +67,7 @@ class VideoController extends Controller
      * @param  \App\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function edit(Video $video)
+    public function edit($id)
     {
         //
     }
@@ -67,7 +79,7 @@ class VideoController extends Controller
      * @param  \App\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Video $video)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -78,8 +90,10 @@ class VideoController extends Controller
      * @param  \App\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Video $video)
+    public function destroy($id)
     {
-        //
+        $videoo = Video::findOrFail($id);
+        $videoo->delete();
+        return redirect()->route('video.index');
     }
 }

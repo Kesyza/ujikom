@@ -6,6 +6,7 @@ use App\Http\Controllers\PaketSoalController;
 use App\Http\Controllers\SoalController;
 use App\Http\Controllers\UjianController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\VideoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,4 +47,5 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], func
     Route::resource('/soal', SoalController::class);
     Route::resource('/ujian', UjianController::class);
     Route::resource('/user-manajemen', UserController::class);
+    Route::resource('/video', VideoController::class);
 });

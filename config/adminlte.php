@@ -254,6 +254,11 @@ return [
         ],
         ['header' => 'Menu'],
         [
+            "text" => 'Materi',
+            "icon" => 'fas fa-play-circle',
+            "url" => 'admin/video',
+        ],
+        [
             'text' => 'Manajemen Data',
             'icon' => 'fas fa-fw fa-file',
             'submenu' => [

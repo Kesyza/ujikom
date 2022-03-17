@@ -52,7 +52,7 @@ class PaketSoalController extends Controller
      * @param  \App\Models\PaketSoal  $paketSoal
      * @return \Illuminate\Http\Response
      */
-    public function show(PaketSoal $paketSoal)
+    public function show($id)
     {
         //
     }
@@ -63,7 +63,7 @@ class PaketSoalController extends Controller
      * @param  \App\Models\PaketSoal  $paketSoal
      * @return \Illuminate\Http\Response
      */
-    public function edit(PaketSoal $paketSoal)
+    public function edit($id)
     {
         //
     }
@@ -75,7 +75,7 @@ class PaketSoalController extends Controller
      * @param  \App\Models\PaketSoal  $paketSoal
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, PaketSoal $paketSoal)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -86,7 +86,7 @@ class PaketSoalController extends Controller
      * @param  \App\Models\PaketSoal  $paketSoal
      * @return \Illuminate\Http\Response
      */
-    public function destroy(PaketSoal $paketSoal)
+    public function destroy($id)
     {
         $paket = PaketSoal::findOrFail($id);
         $paket->delete();
