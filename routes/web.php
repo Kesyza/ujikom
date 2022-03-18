@@ -23,6 +23,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/tryout', function () {
+    return view('tryout');
+});
+
 Auth::routes(
     [
         'register' => false

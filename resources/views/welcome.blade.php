@@ -73,7 +73,7 @@
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
       </nav><!-- .navbar -->
 
-      <a class="btn-getstarted scrollto" href="">Mulai TRYOUT</a>
+      <a class="btn-getstarted scrollto" href="tryout">Mulai TRYOUT</a>
 
     </div>
   </header><!-- End Header -->
@@ -84,7 +84,7 @@
       <h2>Selamat Datang di <span>TRYOUT.</span></h2>
       <p>.</p>
       <div class="d-flex">
-        <a href="#tryout" class="btn-get-started scrollto">Mulai TRYOUT</a>
+        <a href="tryout" class="btn-get-started scrollto">Mulai TRYOUT</a>
         <a href="#materi" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Tonton Video</span></a>
       </div>
     </div>
